@@ -1,8 +1,11 @@
 package spring_introduction.annotationComp;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+
 @Component("dogBean")
+@Scope("prototype")
 public class Dog implements Pet {
 
     private String name;
@@ -16,7 +19,7 @@ public class Dog implements Pet {
     }
 
     public void setName(String name) {
-        this.name = name;
+    this.name = name;
     }
 
     @Override
