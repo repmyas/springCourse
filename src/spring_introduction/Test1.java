@@ -8,6 +8,8 @@ public class Test1 {
         Person2 person2 = context.getBean("myPerson2", Person2.class);
         person2.say();
 
+
+        // закрываем контекст
         context.close();
     }
 
