@@ -1,9 +1,8 @@
-package spring_introduction;
-
+package spring_introduction.annotationComp;
 
 import org.springframework.stereotype.Component;
 
-@Component("myCat")
+@Component("catBean")
 public class Cat implements Pet {
 
     private String name;

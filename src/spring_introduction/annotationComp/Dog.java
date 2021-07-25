@@ -2,13 +2,13 @@ package spring_introduction.annotationComp;
 
 import org.springframework.stereotype.Component;
 
-@Component("catBean")
-public class Cat implements Pet {
+@Component("dogBean")
+public class Dog implements Pet {
 
     private String name;
 
-    public Cat() {
-        System.out.println("Cat is created");
+    public Dog() {
+        System.out.println("Dog is created");
     }
 
     public String getName() {
@@ -21,6 +21,6 @@ public class Cat implements Pet {
 
     @Override
     public void say(){
-        System.out.println("Cat is say ");
+        System.out.println("Dog is say ");
     }
 }
