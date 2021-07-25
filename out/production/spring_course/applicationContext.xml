@@ -11,22 +11,23 @@
     <!--Задаем файл от куда смотреть поля -->
     <context:property-placeholder location="classpath:myApp.properties"/>
     <bean id="myPet"
-          class="spring_introduction.Cat">
+          class="spring_introduction.Dog"
+          scope="prototype">
 
     </bean>
 
     <!--Через конструктор-->
-    <bean id="myPerson"
+    <!--<bean id="myPerson"
           class="spring_introduction.Person">
         <constructor-arg ref="myPet"/>
     </bean>
 
-    <!--Через сетер проперти-->
+    &lt;!&ndash;Через сетер проперти&ndash;&gt;
     <bean id="myPerson2"
           class="spring_introduction.Person2">
         <property name="pet" ref="myPet"/>
         <property name="name" value="${person.name}"/>
         <property name="age" value="${person.age}"/>
-    </bean>
+    </bean>-->
 
 </beans>
